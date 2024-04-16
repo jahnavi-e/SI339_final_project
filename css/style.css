@@ -27,6 +27,9 @@ li{
 img {
     vertical-align: middle;
 }
+a {
+    color: #66FF66;
+}
 nav{
     background-color: black;
     font-size: 17px;
