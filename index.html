@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <title>Jahnavi's Arcade</title>
+</head>
+<body>
+    <header>
+        <a href="#main" class="skip-to-main">Skip to Main Content</a>
+        <nav>
+            <ul>
+                <li><a href = "index.html" class="active"> <img src="images/controller/controller.gif" class="animated" alt="Animated gif on a retro controller">Home</a></li>
+                <li><a href = "snake.html">Snake</a></li>
+                <li><a href = "run.html">Critter Run</a></li>
+                <li><a href = "minesweeper.html">Minesweeper</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <h1>Jahnavi's Arcade</h1>
+        <div class="home-main-grid">
+            <div>
+                <h2>Games</h2>
+                <div class="home-game-grid">
+                    <div>
+                        <div><h3>Snake Game</h3></div>
+                        <div><img src="images/game-screenshots/snake-screenshot.png" width="200" alt="Image of snake game"></div><br>
+                        <div><button><a href="snake.html" class="button">Play Now!</a></button></div>
+                        
+                    </div>
+                    <div>
+                        <img src="images/controller/controller.gif" class="animated" width="200" alt="Animated gif on a retro controller">
+                    </div>
+                    <div>
+                        <div><h3>Minesweeper Game</h3></div>
+                        <div><img src="images/game-screenshots/minesweeper-screenshot.png" width="200" alt="Image of minesweeper game"></div><br>
+                        <div><button><a href="minesweeper.html" class="button">Play Now!</a></button></div>
+                    </div>
+                    <div>
+                        <img src="images/controller/controller.gif" class="animated" width="200" alt="Animated gif on a retro controller">
+                    </div>
+                    <div>
+                        <div><h3>Critter Run Game</h3></div>
+                        <div><img src="images/game-screenshots/run-screenshot.png" width="200" alt="Image of critter run game"></div><br>
+                        <div><button><a href="run.html" class="button">Play Now!</a></button></div>
+                    </div>
+                    <div>
+                        <img src="images/controller/controller.gif" class="animated" width="200" alt="Animated gif on a retro controller">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2>High Scores</h2>
+                <ul>
+                    <li>Snake Game: N/A</li>
+                    <li>Critter Run Game: N/A</li>
+                    <li>Minesweeper Game: N/A</li>
+                </ul>
+                <h2>Get In Touch</h2>
+                <p>Submit your high scores, game ideas, or website suggestions!</p>
+                <form action="https://formspree.io/f/xnqeoepv" method="post">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Name"><br>
+                    <label for="highscore">High Score:</label><br>
+                    <input type="text" id="highscore" name="highscore" placeholder="Highscore"><br>
+                    <label for="game">Game:</label><br>
+                    <input type="radio" id="snake" name="game" value="snake" class="cursor-click">
+                    <label for="snake" class="cursor-click">Snake</label><br>
+                    <input type="radio" id="critter" name="game" value="critter" class="cursor-click">
+                    <label for="critter" class="cursor-click">Critter Run</label><br>
+                    <input type="radio" id="minesweeper" name="game" value="minesweeper" class="cursor-click">
+                    <label for="minesweeper" class="cursor-click">Minesweeper</label><br>
+                    <label for="suggestion">Suggestions:</label><br>
+                    <textarea id="suggestion" name="suggestion" rows="4" cols="25" placeholder="Suggestions"></textarea><br>
+                    <input type="submit" value="Submit" class="button">
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
