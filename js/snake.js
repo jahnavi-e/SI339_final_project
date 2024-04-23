@@ -52,6 +52,9 @@ function update() {
 }
 
 document.addEventListener('keydown', function(e) {
+    if (e.code == "ArrowUp" || e.code == "ArrowDown") {
+        e.preventDefault();
+    }
     if (e.code == "ArrowUp" && snakeVelocity_Y < 1) {
         snakeVelocity_X = 0;
         snakeVelocity_Y = -1;

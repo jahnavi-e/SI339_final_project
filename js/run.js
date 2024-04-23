@@ -49,35 +49,35 @@ window.addEventListener("load", function() {
 
 function update() {
     if (startGame) {
-    // Resetting canvas
-    context.clearRect(0, 0, runCanvas.width, runCanvas.height);
+        // Resetting canvas
+        context.clearRect(0, 0, runCanvas.width, runCanvas.height);
 
-    // Checking if game over
-    if (gameOver()) {
-        alert("Game Over");
-        context.fillStyle = "rgba(255, 255, 255, 0.5)";
-        context.fillRect(30, 214, 52, 36);
-        context.drawImage(critterImg, 0, 200, 100, 100);
-        obstacles.shift();
-        noObject = true;
-        startGame = false;
-        score = 0;
-        return;
-    }
+        // Checking if game over
+        if (gameOver()) {
+            alert("Game Over");
+            context.fillStyle = "rgba(255, 255, 255, 0.5)";
+            context.fillRect(30, 214, 52, 36);
+            context.drawImage(critterImg, 0, 200, 100, 100);
+            obstacles.shift();
+            noObject = true;
+            startGame = false;
+            score = 0;
+            return;
+        }
 
-    // Generating obstacles
-    generateObstacles();
-    for (let i = 0; i < obstacles.length; i++) {
-        obstacles[i].x += obstacleVelocity_X;
-        context.drawImage(obstacleImg, obstacles[i].x, 150, 100, 100);
-    }
+        // Generating obstacles
+        generateObstacles();
+        for (let i = 0; i < obstacles.length; i++) {
+            obstacles[i].x += obstacleVelocity_X;
+            context.drawImage(obstacleImg, obstacles[i].x, 150, 100, 100);
+        }
 
-    // Moving the critter
-    moveCritter();
+        // Moving the critter
+        moveCritter();
 
-    // Updating scoreboard
-    score += 0.03;
-    document.getElementById("scoreboard").innerHTML = Math.floor(score);
+        // Updating scoreboard
+        score += 0.03;
+        document.getElementById("scoreboard").innerHTML = Math.floor(score);
     }
 }
 
