@@ -30,7 +30,7 @@
                     <div>
                         <div><h3>Snake Game</h3></div>
                         <div><img src="images/game-screenshots/snake-screenshot.png" width="200" alt="Image of snake game"></div><br>
-                        <div><a href="snake.html"><button class="button">Play Now!</button></a></div>
+                        <div><button onclick="window.location.href='snake.html'" class="button">Play Now!</button></div>
                         
                     </div>
                     <div class="desktop-only">
@@ -39,7 +39,7 @@
                     <div>
                         <div><h3>Minesweeper Game</h3></div>
                         <div><img src="images/game-screenshots/minesweeper-screenshot.png" width="200" alt="Image of minesweeper game"></div><br>
-                        <div><a href="minesweeper.html" class="button"><button class="button">Play Now!</button></a></div>
+                        <div><button onclick="window.location.href='minesweeper.html'" class="button">Play Now!</button></div>
                     </div>
                     <div class="desktop-only">
                         <img src="images/controller/controller.gif" class="animated" width="200" alt="Animated gif on a retro controller">
@@ -47,7 +47,7 @@
                     <div>
                         <div><h3>Critter Run Game</h3></div>
                         <div><img src="images/game-screenshots/run-screenshot.png" width="200" alt="Image of critter run game"></div><br>
-                        <div><a href="run.html"><button class="button">Play Now!</button></a></div>
+                        <div><button onclick="window.location.href='run.html'" class="button">Play Now!</button></div>
                     </div>
                     <div class="desktop-only">
                         <img src="images/controller/controller.gif" class="animated" width="200" alt="Animated gif on a retro controller">
@@ -69,12 +69,12 @@
                     <label for="highscore">High Score:</label><br>
                     <input type="text" id="highscore" name="highscore" placeholder="Highscore"><br>
                     <label for="game">Game:</label><br>
-                    <input type="radio" id="snake" name="game" value="snake" class="cursor-click">
-                    <label for="snake" class="cursor-click">Snake</label><br>
-                    <input type="radio" id="critter" name="game" value="critter" class="cursor-click">
-                    <label for="critter" class="cursor-click">Critter Run</label><br>
-                    <input type="radio" id="minesweeper" name="game" value="minesweeper" class="cursor-click">
-                    <label for="minesweeper" class="cursor-click">Minesweeper</label><br>
+                    <input type="radio" id="game" name="game" value="snake" class="cursor-click">
+                    <label for="game" class="cursor-click">Snake</label><br>
+                    <input type="radio" id="game" name="game" value="critter" class="cursor-click">
+                    <label for="game" class="cursor-click">Critter Run</label><br>
+                    <input type="radio" id="game" name="game" value="minesweeper" class="cursor-click">
+                    <label for="game" class="cursor-click">Minesweeper</label><br>
                     <label for="suggestion">Suggestions:</label><br>
                     <textarea id="suggestion" name="suggestion" rows="4" cols="25" placeholder="Suggestions"></textarea><br>
                     <input type="submit" value="Submit" class="button">
